@@ -1,0 +1,86 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Breaking news on politics
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p 
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title times of india
+            .panel-body
+              p telangana elections
+              p BJP 
+              p Congress 
+              p BRS 
+              p Others politic
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title #No.1
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Election code
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Others
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;BJP vs BRS
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Latest Breaking news
+            .panel-body
+              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new')     Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Ajay
+                    small.reviewTimestamp 16 July 2013
+                  .col-xs-12
+                    p Sufficent news
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Kanil
+                    small.reviewTimestamp 16 June 2013
+                  .col-xs-12
+                    p It was okay
+    .col-xs-12.col-md-3
+      p.lead
+        | politics news is on INDIAN Express news because it has accessible news and breaking news to know whts going around the world.
+      p
+        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.
